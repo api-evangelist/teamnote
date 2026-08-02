@@ -1,7 +1,27 @@
 aid: teamnote
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/teamnote.png
 name: Teamnote
-description: Teamnote is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  TeamNote is an enterprise mobile productivity and secure communication platform
+  founded in Hong Kong in 2014 and part of Y Combinator's Winter 2015 batch.
+  Positioned as "Slack for mobile workforces," it gives corporations a mobile-first
+  workspace for team messaging, collaboration, workflow forms, announcements, and
+  content distribution to frontline and deskless staff, with enterprise security
+  and administration controls. The product originally shipped at teamnoteapp.com
+  (its first customer was Cheung Kong Holdings) and the company now presents at
+  teamnote.ai. No public developer API, OpenAPI specification, SDK, or documentation
+  surface was discoverable during enrichment; both web properties are bot-protected.
 url: https://raw.githubusercontent.com/api-evangelist/teamnote/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +31,27 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Enterprise Messaging
+- Mobile
+- Collaboration
+- Productivity
+- Communication
+- Workforce
+- Hong Kong
 apis: []
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+common:
+- type: DomainSecurity
+  url: security/teamnote-domain-security.yml
+- type: Website
+  url: https://teamnote.ai
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
